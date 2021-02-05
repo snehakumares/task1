@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ATG.WORLD</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid" id="navbar">
+        <div class="row my-row">
+            <div class="col-sm my-col">
+                <div id="logo">
+                    <span class="green">ATG.</span>W<img src="assets/logo.png">RLD
+                </div>
+            </div>
+            <div class="col-sm my-col">
+                <div id="search">
+                    <div>
+                        <img src="assets/search.png">
+                        <input type="text" onclick="this.value=''" value="Search for your favourite groups in ATG">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm my-col ">
+                <div id="create-account">
+                    <span>Create account. <span class="blue" onclick="createaccount()">It's free!</span></span>
+                    <img src="assets/downarrow.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid" id="homebanner">
+        <div class="container">
+            <h2>
+                Computer Engineering
+            </h2>
+            <h3>
+                142,765 Computer Engineers follow this
+            </h3>
+        </div>
+    </div>
+    <div class="container" id="home-contents">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid navnew">
+                <nav class="nav">
+                    <a class="nav-link active navlinks" aria-current="page" href="#">All Posts(32)</a>
+                    <a class="nav-link navlinks" href="#">Article</a>
+                    <a class="nav-link navlinks" href="#">Event</a>
+                    <a class="nav-link navlinks" href="#">Education</a>
+                    <a class="nav-link navlinks" href="#">Job</a>
+                </nav>
+
+                <form class="d-flex">
+
+                    <div class="nav-others">
+                        <div class="dropdown nav-others-content">
+                            <button class="btn btn-gray dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  Write a Post
+                </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Article</a></li>
+                                <li><a class="dropdown-item" href="#">Event</a></li>
+                                <li><a class="dropdown-item" href="#">Education</a></li>
+                                <li><a class="dropdown-item" href="#">Job</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-others">
+                        <div class="nav-others-content">
+                            <button class="btn btn-primary" type="button">
+                        <img src="assets/joingroup.png"> 
+                        Join Group
+                </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <div class="articles container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card mycard article">
+                        <img src="assets/article1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <img src="assets/articlelogo.png" class="sectionlogo">
+                            <div class="dropdown nav-others-content">
+                                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/threedots.png" class="menu">
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Report</a></li>
+                                    <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                </ul>
+                            </div>
+
+                            <h5 class="card-title">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
+                            <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                            <img src="assets/article_photos/article1.png">
+                            <span class="name">Sarthak Kamra</span>
+                            <div class="views">
+                                <img src="assets/views.png"> 1.4k views
+                                <div class="btn sharebutton"><img src="assets/share.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card mycard education">
+                        <img src="assets/education1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <img src="assets/educationlogo.png" class="sectionlogo" id="educationlogo">
+                            <div class="dropdown nav-others-content">
+                                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/threedots.png" class="menu">
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Report</a></li>
+                                    <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title">Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
+                            <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                            <img src="assets/article_photos/education1.png">
+                            <span class="name">Sarah West</span>
+                            <div class="views">
+                                <img src="assets/views.png"> 1.4k views
+                                <div class="btn sharebutton"><img src="assets/share.png"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card mycard meetup">
+                        <img src="assets/meetup.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <img src="assets/meetuplogo.png" class="sectionlogo">
+                            <div class="dropdown nav-others-content">
+                                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/threedots.png" class="menu">
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Report</a></li>
+                                    <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title">Finance & Investment Elite Social Mixer @Lujiazui</h5>
+                            <div class="date">
+                                <img src="assets/date.png"> Fri, 12 Oct,2018
+                            </div>
+                            <div class="location">
+                                <img src="assets/pin.png"> Ahmedabad,India
+                            </div>
+                            <div class="meetup_visit button">
+                                <button><a href="#">Visit Website</a></button>
+                            </div>
+                            <img src="assets/article_photos/meetup1.svg">
+                            <span class="name">Ronal Jones</span>
+                            <div class="views">
+                                <img src="assets/views.png"> 1.4k views
+                                <div class="btn sharebutton"><img src="assets/share.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card mycard job">
+                        <div class="card-body">
+                            <img src="assets/joblogo.png" class="sectionlogo" id="joblogo">
+                            <div class="dropdown nav-others-content">
+                                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/threedots.png" class="menu">
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Report</a></li>
+                                    <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title">Software Developer</h5>
+                            <div class="job_company">
+                                <img src="assets/date.png"> Innovaccer Analytics Private Ltd.
+                            </div>
+                            <div class="location">
+                                <img src="assets/pin.png"> Noida,India
+                            </div>
+                            <div class="job_apply button">
+                                <button><a href="#">Apply on TimesJobs</a></button>
+                            </div>
+                            <img src="assets/article_photos/job1.png">
+                            <span class="name">Joseph Gray</span>
+                            <div class="views">
+                                <img src="assets/views.png"> 1.4k views
+                                <div class="btn sharebutton"><img src="assets/share.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search-input">
+                <img src="assets/pin.png">
+                <img src="assets/pencil.png" id="write">
+            </div>
+            <div class="info">
+                <img src="assets/information.png">
+                <span>Your location will help us serve better and extend a personalised experience.</span>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="create-account-modal">
+        <div class="modal-all">
+            <div class="close" onclick="this.parent.style.display='none'">
+                <img src="assets/close.svg">
+            </div>
+            <div class="modal-content">
+                <div class="top" style="color:#008A45;">
+                    Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+                </div>
+                <div class="others">
+                    <div class="create">
+                        <h3 class="modalheading">Create Account</h3>
+                        <form>
+                            <input type="text" placeholder="First Name" id="firstname">
+                            <input type="text" placeholder="Last Name" id="firstname">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <input type="submit" value="Create Account" class="bluebutton">
+                        </form>
+                        <button class="whitebutton" style="cursor: pointer;">Sign up with Facebook</button>
+                        <button class="whitebutton" style="cursor: pointer;">Sign up with Google</button>
+                    </div>
+                    <div class="right">
+                        <span class="sign-or-create">Already have an account? <span class="blue" onclick="signin()">Sign In</span></span>
+                        <img class="modal-image" src="assets/createaccount.svg">
+                        <span class="caution">By signing up, you agree to our Terms & conditions, Privacy policy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="signin-modal">
+        <div class="modal-all">
+            <div class="close" onclick="this.parent.style.display='none'">
+                <img src="assets/close.svg">
+            </div>
+            <div class="modal-content">
+                <div class="top" style="color:#008A45;">
+                    Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+                </div>
+                <div class="others">
+                    <div class="sign">
+                        <h3 class="modalheading">Sign In</h3>
+                        <form>
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="submit" value="Sign In" class="bluebutton">
+                        </form>
+                        <button class="whitebutton" style="cursor: pointer;">Sign up with Facebook</button>
+                        <button class="whitebutton" style="cursor: pointer;">Sign up with Google</button>
+                        <span class="forgotpass" style="cursor: pointer;">Forgot Password?</span>
+                    </div>
+                    <div class="right">
+                        <span class="sign-or-create">Don't have an account yet? <span class="blue" onclick="createaccount()">Create new for free!</span></span>
+                        <img class="modal-image" src="assets/createaccount.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js " async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW " crossorigin="anonymous "></script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+* {
+    font-family: "IBM Plex Sans";
+}
+
+@media (min-width:768px) {
+    #navbar {
+        height: 72px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    }
+    .my-row {
+        height: 100%;
+        align-items: center;
+    }
+    .my-col {
+        text-align: center;
+    }
+    #logo {
+        font-size: 24px;
+    }
+    #search {
+        background: #F2F2F2;
+        border-radius: 21px;
+        width: 100%;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #search input {
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+    }
+    .green {
+        color: #27A365;
+    }
+    .blue {
+        color: #339AF0;
+        cursor: pointer;
+    }
+    #create-account {
+        cursor: pointer;
+    }
+    #create-account span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    #homebanner {
+        height: 500px;
+        background-image: url("assets/homebackground.png");
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #homebanner h2,
+    #homebanner h3 {
+        color: white;
+        position: absolute;
+    }
+    #homebanner h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 47px;
+        top: 65%;
+    }
+    #homebanner h3 {
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        top: 77%;
+    }
+    #home-contents {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    .navbar {
+        border-bottom: 1px solid #E0E0E0;
+        padding-left: 0;
+    }
+    .navbar .navnew {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .nav-link {
+        color: #8A8A8A;
+    }
+    .nav-link:first-child {
+        padding-left: 0;
+    }
+    .active {
+        color: black;
+        border-bottom: 1px solid black;
+    }
+    .navlinks {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        padding-bottom: 15px;
+    }
+    .btn-gray {
+        background: #EDEEF0;
+    }
+    .nav-others {}
+    .nav-others-content {
+        justify-self: end;
+        float: left;
+        margin-right: 20px;
+    }
+    .nav-others-content button {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .articles {
+        margin-top: 30px;
+        padding-left: 0;
+    }
+    .articles .card {
+        width: 92%;
+        margin-bottom: 20px;
+    }
+    .card h5 {
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 134.55%;
+    }
+    .card .card-text {
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 134.17%;
+        /* or 25px */
+        color: #5C5C5C;
+    }
+    .card .card-body img {
+        width: 48px;
+        height: 48px;
+    }
+    .card .card-body .sectionlogo {
+        width: 55px;
+        height: 14px;
+        margin-bottom: 5px;
+    }
+    .card .card-body .dropdown {
+        float: right;
+        margin-right: 0px;
+    }
+    .card .card-body .dropdown .btn .menu {
+        height: 6px;
+        width: 15px;
+        outline: 0;
+    }
+    .card .card-body #educationlogo {
+        width: 66px;
+    }
+    .card .card-body #joblogo {
+        width: 44px;
+        height: 14px;
+    }
+    .card .card-body .views {
+        float: right;
+    }
+    .card .card-body .views div {
+        margin-left: 40px
+    }
+    .card .card-body .views img {
+        width: 20px;
+        height: 14px;
+    }
+    .name {
+        margin-left: 5px;
+    }
+    .sharebutton {
+        background: #EDEEF0;
+    }
+    .card .card-body .views .sharebutton img {
+        height: 15px;
+        width: 15px;
+    }
+    .card-body .location {
+        float: clear;
+    }
+    .card-body .date,
+    .card-body .job_company {
+        float: left;
+        margin-right: 5%;
+    }
+    .card .card-body .date img,
+    .card .card-body .job_company img,
+    .card .card-body .location img {
+        height: 15px;
+        width: 15px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+    .card .card-body .date,
+    .card .card-body .job_company,
+    .card .card-body .location {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .card .card-body .button button {
+        width: 100%;
+        margin: 30px 0;
+        outline: 0;
+        border-radius: 10px;
+        border: 0.7px solid #A9AEB8;
+        padding: 7px;
+        background-color: transparent;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 140.4%;
+    }
+    .card .card-body .meetup_visit button a {
+        color: #E56135;
+        text-decoration: none;
+    }
+    .card .card-body .job_apply button a {
+        color: #02B875;
+        text-decoration: none;
+    }
+    .articles {
+        float: left;
+        width: 70%;
+        margin-bottom: 70px;
+    }
+    .search {
+        width: 25%;
+        float: right;
+        margin-top: 30px;
+    }
+    .search .search-input {
+        padding-bottom: 10px;
+        border-bottom: 0.4px solid #B8B8B8;
+        margin-bottom: 20px;
+    }
+    .search .search-input img {
+        height: 20px;
+        width: 20px;
+    }
+    .search .search-input #write {
+        float: right;
+    }
+    .search .info img {
+        float: left;
+    }
+    .search .info span {
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+        opacity: 0.5;
+        margin-left: 5px;
+        float: right;
+        width: 90%;
+    }
+    .modal {
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .modal .modal-all {
+        width: 60%;
+        height: 50%;
+        margin: auto;
+    }
+    .modal .modal-all .close {
+        float: right;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .modal-content {
+        background: rgb(255, 255, 255, 1);
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        margin: auto;
+    }
+    .modal-content .top {
+        background: #EFFFF4;
+        border-radius: 8px 8px 0 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        padding: 10px;
+    }
+    .modal-content .others {
+        padding: 25px;
+    }
+    .modal-content .others div {
+        float: left;
+        width: 50%;
+    }
+    .modal input {
+        background: #F7F8FA;
+        border: 1px solid #D9D9DB;
+        width: 100%;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 16px;
+        color: #8A8A8A;
+    }
+    .modalheading {
+        margin-bottom: 20px;
+    }
+    .create,
+    .sign {
+        display: flex;
+        flex-direction: column;
+    }
+    #firstname,
+    #lastname {
+        width: 50%;
+        float: left;
+    }
+    .bluebutton {
+        background: #2F6CE5;
+        width: 100%;
+        margin: 10px 0 20px 0;
+        border-radius: 20px;
+        color: white;
+        border: 0;
+        outline: 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        box-shadow: 0;
+        padding: 10px;
+    }
+    .whitebutton {
+        background: transparent;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        padding: 10px;
+        outline: 0;
+        box-shadow: 0;
+        border: 0.6px solid #D9D9DB;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .caution {
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: -0.008em;
+        color: #000000;
+        opacity: 0.6;
+    }
+    .sign-or-create {
+        text-align: right;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 17px;
+        text-align: right;
+        color: #3D3D3D;
+        width: 97%;
+    }
+    .modal-image {
+        justify-self: center;
+    }
+    .forgotpass {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: -0.008em;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width:300px) and (max-width:767px) {
+    .mycard {
+        width: 100%;
+    }
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
