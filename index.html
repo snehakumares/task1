@@ -20,13 +20,13 @@
         <div class="row my-row">
             <div class="col-sm my-col">
                 <div id="logo">
-                    <span class="green">ATG.</span>W<img src="assets/logo.png">RLD
+                    <span class="green">ATG.</span>W<img src="assets/others/logo.png">RLD
                 </div>
             </div>
             <div class="col-sm my-col">
                 <div id="search">
                     <div>
-                        <img src="assets/search.png">
+                        <img src="assets/others/search.png">
                         <input type="text" onclick="this.value=''" value="Search for your favourite groups in ATG">
                     </div>
                 </div>
@@ -34,7 +34,11 @@
             <div class="col-sm my-col ">
                 <div id="create-account">
                     <span>Create account. <span class="blue" onclick="createaccount()">It's free!</span></span>
-                    <img src="assets/downarrow.png">
+                    <img src="assets/others/downarrow.png">
+                </div>
+                <div id="user">
+                    <span id="name"></span>
+                    <img src="assets/others/downarrow.png">
                 </div>
             </div>
 
@@ -51,7 +55,7 @@
         </div>
     </div>
     <div class="container" id="home-contents">
-        <nav class="navbar navbar-light">
+        <nav class="navbar navbar-light" id="smallnav">
             <div class="container-fluid navnew">
                 <nav class="nav">
                     <a class="nav-link active navlinks" aria-current="page" href="#">All Posts(32)</a>
@@ -79,7 +83,7 @@
                     <div class="nav-others">
                         <div class="nav-others-content">
                             <button class="btn btn-primary" type="button">
-                        <img src="assets/joingroup.png"> 
+                        <img src="assets/others/joingroup.png"> 
                         Join Group
                 </button>
                         </div>
@@ -87,16 +91,32 @@
                 </form>
             </div>
         </nav>
+        <div id="navphone">
+            <div class="posts">
+                Posts(368)
+            </div>
+            <div class="dropdown filter">
+                <button class="btn btn-gray dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+      Filter: All
+    </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Article</a></li>
+                    <li><a class="dropdown-item" href="#">Event</a></li>
+                    <li><a class="dropdown-item" href="#">Education</a></li>
+                    <li><a class="dropdown-item" href="#">Job</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="articles container">
             <div class="row">
                 <div class="col-sm">
                     <div class="card mycard article">
-                        <img src="assets/article1.png" class="card-img-top" alt="...">
+                        <img src="assets/articles/article1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <img src="assets/articlelogo.png" class="sectionlogo">
+                            <img src="assets/articles/articlelogo.png" class="sectionlogo">
                             <div class="dropdown nav-others-content">
                                 <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="assets/threedots.png" class="menu">
+                                    <img src="assets/others/threedots.png" class="menu">
                             </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <li><a class="dropdown-item" href="#">Edit</a></li>
@@ -107,11 +127,11 @@
 
                             <h5 class="card-title">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
                             <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
-                            <img src="assets/article_photos/article1.png">
+                            <img src="assets/articles/article_photos/article1.png">
                             <span class="name">Sarthak Kamra</span>
                             <div class="views">
-                                <img src="assets/views.png"> 1.4k views
-                                <div class="btn sharebutton"><img src="assets/share.png"></div>
+                                <img src="assets/others/views.png"> 1.4k views
+                                <div class="btn sharebutton"><img src="assets/others/share.png"></div>
                             </div>
                         </div>
                     </div>
@@ -120,12 +140,12 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="card mycard education">
-                        <img src="assets/education1.png" class="card-img-top" alt="...">
+                        <img src="assets/education/education1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <img src="assets/educationlogo.png" class="sectionlogo" id="educationlogo">
+                            <img src="assets/education/educationlogo.png" class="sectionlogo" id="educationlogo">
                             <div class="dropdown nav-others-content">
                                 <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="assets/threedots.png" class="menu">
+                                    <img src="assets/others/threedots.png" class="menu">
                             </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <li><a class="dropdown-item" href="#">Edit</a></li>
@@ -135,11 +155,11 @@
                             </div>
                             <h5 class="card-title">Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
                             <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
-                            <img src="assets/article_photos/education1.png">
+                            <img src="assets/articles/article_photos/education1.png">
                             <span class="name">Sarah West</span>
                             <div class="views">
-                                <img src="assets/views.png"> 1.4k views
-                                <div class="btn sharebutton"><img src="assets/share.png"></div>
+                                <img src="assets/others/views.png"> 1.4k views
+                                <div class="btn sharebutton"><img src="assets/others/share.png"></div>
                             </div>
 
                         </div>
@@ -149,12 +169,12 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="card mycard meetup">
-                        <img src="assets/meetup.png" class="card-img-top" alt="...">
+                        <img src="assets/meetup/meetup.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <img src="assets/meetuplogo.png" class="sectionlogo">
+                            <img src="assets/meetup/meetuplogo.png" class="sectionlogo">
                             <div class="dropdown nav-others-content">
                                 <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="assets/threedots.png" class="menu">
+                                    <img src="assets/others/threedots.png" class="menu">
                             </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <li><a class="dropdown-item" href="#">Edit</a></li>
@@ -164,19 +184,19 @@
                             </div>
                             <h5 class="card-title">Finance & Investment Elite Social Mixer @Lujiazui</h5>
                             <div class="date">
-                                <img src="assets/date.png"> Fri, 12 Oct,2018
+                                <img src="assets/others/date.png"> Fri, 12 Oct,2018
                             </div>
                             <div class="location">
-                                <img src="assets/pin.png"> Ahmedabad,India
+                                <img src="assets/others/pin.png"> Ahmedabad,India
                             </div>
                             <div class="meetup_visit button">
                                 <button><a href="#">Visit Website</a></button>
                             </div>
-                            <img src="assets/article_photos/meetup1.svg">
+                            <img src="assets/articles/article_photos/meetup1.svg">
                             <span class="name">Ronal Jones</span>
                             <div class="views">
-                                <img src="assets/views.png"> 1.4k views
-                                <div class="btn sharebutton"><img src="assets/share.png"></div>
+                                <img src="assets/others/views.png"> 1.4k views
+                                <div class="btn sharebutton"><img src="assets/others/share.png"></div>
                             </div>
                         </div>
                     </div>
@@ -186,10 +206,10 @@
                 <div class="col-sm">
                     <div class="card mycard job">
                         <div class="card-body">
-                            <img src="assets/joblogo.png" class="sectionlogo" id="joblogo">
+                            <img src="assets/job/joblogo.png" class="sectionlogo" id="joblogo">
                             <div class="dropdown nav-others-content">
                                 <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="assets/threedots.png" class="menu">
+                                    <img src="assets/others/threedots.png" class="menu">
                             </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <li><a class="dropdown-item" href="#">Edit</a></li>
@@ -199,19 +219,19 @@
                             </div>
                             <h5 class="card-title">Software Developer</h5>
                             <div class="job_company">
-                                <img src="assets/date.png"> Innovaccer Analytics Private Ltd.
+                                <img src="assets/others/date.png"> Innovaccer Analytics Private Ltd.
                             </div>
                             <div class="location">
-                                <img src="assets/pin.png"> Noida,India
+                                <img src="assets/others/pin.png"> Noida,India
                             </div>
                             <div class="job_apply button">
                                 <button><a href="#">Apply on TimesJobs</a></button>
                             </div>
-                            <img src="assets/article_photos/job1.png">
+                            <img src="assets/articles/article_photos/job1.png">
                             <span class="name">Joseph Gray</span>
                             <div class="views">
-                                <img src="assets/views.png"> 1.4k views
-                                <div class="btn sharebutton"><img src="assets/share.png"></div>
+                                <img src="assets/others/views.png"> 1.4k views
+                                <div class="btn sharebutton"><img src="assets/others/share.png"></div>
                             </div>
                         </div>
                     </div>
@@ -220,11 +240,11 @@
         </div>
         <div class="search">
             <div class="search-input">
-                <img src="assets/pin.png">
-                <img src="assets/pencil.png" id="write">
+                <img src="assets/others/pin.png">
+                <img src="assets/others/pencil.png" id="write">
             </div>
             <div class="info">
-                <img src="assets/information.png">
+                <img src="assets/others/information.png">
                 <span>Your location will help us serve better and extend a personalised experience.</span>
             </div>
         </div>
@@ -232,7 +252,7 @@
     <div class="modal" id="create-account-modal">
         <div class="modal-all">
             <div class="close" onclick="document.getElementById('create-account-modal').style.display='none'">
-                <img src="assets/close.svg">
+                <img src="assets/modal/close.svg">
             </div>
             <div class="modal-content">
                 <div class="top" style="color:#008A45;">
@@ -247,14 +267,14 @@
                             <input type="email" placeholder="Email">
                             <input type="password" placeholder="Password">
                             <input type="password" placeholder="Confirm Password">
-                            <input type="submit" value="Create Account" class="bluebutton">
+                            <input type="submit" value="Create Account" class="bluebutton" style="background-color: #2F6CE5;color:white">
                         </form>
-                        <button class="whitebutton" style="cursor: pointer;">Sign up with Facebook</button>
-                        <button class="whitebutton" style="cursor: pointer;">Sign up with Google</button>
+                        <button class="whitebutton" style="cursor: pointer;"><img src="assets/modal/facebook.svg"> Sign up with Facebook</button>
+                        <button class="whitebutton" style="cursor: pointer;"><img src="assets/modal/google.svg">Sign up with Google</button>
                     </div>
                     <div class="right">
                         <span class="sign-or-create">Already have an account? <span class="blue" onclick="signin()">Sign In</span></span>
-                        <img class="modal-image" src="assets/createaccount.svg">
+                        <img class="modal-image" src="assets/modal/createaccount.svg">
                         <span class="caution">By signing up, you agree to our Terms & conditions, Privacy policy</span>
                     </div>
                 </div>
@@ -264,7 +284,7 @@
     <div class="modal" id="signin-modal">
         <div class="modal-all">
             <div class="close" onclick="document.getElementById('signin-modal').style.display='none'">
-                <img src="assets/close.svg">
+                <img src="assets/modal/close.svg">
             </div>
             <div class="modal-content">
                 <div class="top" style="color:#008A45;">
@@ -274,18 +294,70 @@
                     <div class="sign">
                         <h3 class="modalheading">Sign In</h3>
                         <form>
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                            <input type="submit" value="Sign In" class="bluebutton">
+                            <input type="email" required placeholder="Email" name="email" id="email" value="">
+                            <input type="password" required placeholder="Password" name="password" id="password" value="">
+                            <input type="button" onclick="usersignin()" value="Sign In" class="bluebutton" style="background-color: #2F6CE5;color:white">
                         </form>
-                        <button class="whitebutton" style="cursor: pointer;">Sign up with Facebook</button>
-                        <button class="whitebutton" style="cursor: pointer;">Sign up with Google</button>
+                        <button class="whitebutton" style="cursor: pointer;"><img src="assets/modal/facebook.svg"> Sign up with Facebook</button>
+                        <button class="whitebutton" style="cursor: pointer;"><img src="assets/modal/google.svg">Sign up with Google</button>
                         <span class="forgotpass" style="cursor: pointer;">Forgot Password?</span>
                     </div>
                     <div class="right">
                         <span class="sign-or-create">Don't have an account yet? <span class="blue" onclick="createaccount()">Create new for free!</span></span>
-                        <img class="modal-image" src="assets/createaccount.svg">
+                        <img class="modal-image" src="assets/modal/createaccount.svg">
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobsignin" onclick="mobcreateaccount()">
+        <img src="assets/others/user.png">
+    </div>
+    <div class="modal" id="create-account-phone">
+        <div class="modal-all">
+            <div class="modal-content">
+                <div class="others">
+                    <div class="create">
+                        <h3 class="modalheading">Create Account</h3>
+                        <div class="close" onclick="document.getElementById('create-account-phone').style.display='none'">
+                            <img src="assets/modal/closephone.svg">
+                        </div>
+                        <form>
+                            <input type="text" placeholder="First Name" id="firstname">
+                            <input type="text" placeholder="Last Name" id="firstname">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <input type="submit" value="Create Account" class="bluebutton" style="background-color: #2F6CE5;color:white"> <span class="sign-or-create"><span class="blue" onclick="signinphone()">Sign In</span></span>
+                        </form>
+                        <button class="whitebutton" style="cursor: pointer;"><img src="assets/modal/facebook.svg"> Sign up with Facebook</button>
+                        <button class="whitebutton" style="cursor: pointer;"><img src="assets/modal/google.svg">Sign up with Google</button>
+                    </div>
+                    <span class="caution">By signing up, you agree to our Terms & conditions, Privacy policy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="signin-phone">
+        <div class="modal-all">
+            <div class="modal-content">
+                <div class="close" onclick="document.getElementById('signin-phone').style.display='none'">
+                    <img src="assets/modal/closephone.svg">
+                </div>
+                <div class="others">
+                    <div class="sign">
+                        <h3 class="modalheading">Sign In</h3>
+                        <form>
+                            <input type="email" required placeholder="Email" name="email" id="email" value="">
+                            <input type="password" required placeholder="Password" name="password" id="password" value="">
+                            <input type="button" onclick="usersignin()" value="Sign In" class="bluebutton" style="background-color: #2F6CE5;color:white">
+                            <span class="sign-or-create"><span class="blue" onclick="mobcreateaccount()">Create new for free!</span></span>
+                        </form>
+                        <button class="whitebutton" style="cursor: pointer;"><img src="assets/modal/facebook.svg"> Sign up with Facebook</button>
+                        <button class="whitebutton" style="cursor: pointer;"><img src="assets/modal/google.svg">Sign up with Google</button>
+                        <span class="forgotpass" style="cursor: pointer;">Forgot Password?</span>
+                    </div>
+
                 </div>
             </div>
         </div>

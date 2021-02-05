@@ -52,7 +52,7 @@ html {
     }
     #homebanner {
         height: 500px;
-        background-image: url("assets/homebackground.png");
+        background-image: url("assets/others/homebackground.png");
         background-color: rgba(0, 0, 0, 0.4);
         background-blend-mode: darken;
         background-size: cover;
@@ -323,6 +323,7 @@ html {
         font-size: 15px;
         line-height: 16px;
         color: #8A8A8A;
+        outline: 0;
     }
     .modalheading {
         margin-bottom: 20px;
@@ -336,37 +337,6 @@ html {
     #lastname {
         width: 50%;
         float: left;
-    }
-    .bluebutton {
-        background: #2F6CE5;
-        width: 100%;
-        margin: 10px 0 20px 0;
-        border-radius: 20px;
-        color: white;
-        border: 0;
-        outline: 0;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-        box-shadow: 0;
-        padding: 10px;
-    }
-    .whitebutton {
-        background: transparent;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-        padding: 10px;
-        outline: 0;
-        box-shadow: 0;
-        border: 0.6px solid #D9D9DB;
-        border-radius: 2px;
-        margin-bottom: 10px;
-        width: 100%;
     }
     .right {
         display: flex;
@@ -407,9 +377,65 @@ html {
         width: 100%;
         margin-top: 10px;
     }
+    .bluebutton {
+        background: #2F6CE5;
+        width: 100%;
+        margin: 20px 0 20px 0;
+        border-radius: 20px;
+        color: white;
+        border: 0;
+        outline: 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        box-shadow: 0;
+        padding: 10px;
+    }
+    .whitebutton {
+        background: transparent;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        padding: 10px;
+        outline: 0;
+        box-shadow: 0;
+        border: 0.6px solid #D9D9DB;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .whitebutton img {
+        margin-right: 10px;
+    }
+    #user {
+        display: none;
+    }
+    #navphone {
+        display: none;
+    }
+    .mobsignin {
+        display: none;
+    }
+    #create-account-phone {
+        display: none;
+    }
+    #signin-phone {
+        display: none;
+    }
 }
 
 @media (min-width:300px) and (max-width:767px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
+    * {
+        font-family: 'IBM Plex Sans';
+    }
     .mycard {
         width: 100%;
     }
@@ -423,5 +449,249 @@ html {
         margin: 0;
         padding-left: 0;
         padding-right: 0;
+    }
+    #navbar {
+        width: 100;
+        height: 30px;
+        background-color: white;
+    }
+    #navbar .my-row {
+        display: none;
+    }
+    #homebanner {
+        height: 236px;
+        width: 100%;
+        background-image: url("assets/others/homemob.svg");
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #homebanner .container {
+        position: absolute;
+        top: 65%;
+        margin-left: 20px;
+    }
+    #homebanner h2 {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 22px;
+        color: white;
+    }
+    #homebanner h3 {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: white;
+    }
+    #smallnav {
+        display: none;
+    }
+    #navphone {
+        display: block;
+        width: 100%;
+        margin: 10px 20px;
+    }
+    .posts {
+        float: left;
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+    }
+    .filter {
+        padding: 0;
+        text-align: end;
+        margin-right: 40px;
+    }
+    #dropdownMenuButton {
+        padding: 2px 10px;
+        background-color: #F1F3F5;
+        background: transparent;
+    }
+    .articles {
+        margin-top: 20px;
+    }
+    .sectionlogo {
+        height: 14px;
+        width: auto;
+    }
+    .card-body h5 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .card-body .dropdown {
+        float: right;
+        background: transparent;
+    }
+    .card-title {
+        margin-top: 10px;
+    }
+    .views {
+        float: right;
+    }
+    .search {
+        display: none;
+    }
+    .date,
+    .job_company,
+    .location {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.01em;
+    }
+    .card .card-body .date img,
+    .card .card-body .job_company img,
+    .card .card-body .location img {
+        height: 13px;
+        width: 13px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+    .card .card-body .date,
+    .card .card-body .job_company {
+        float: left;
+        margin-right: 5%;
+    }
+    .card .card-body .button button {
+        width: 100%;
+        margin: 30px 0;
+        outline: 0;
+        border-radius: 10px;
+        border: 0.7px solid #A9AEB8;
+        padding: 7px;
+        background-color: transparent;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 140.4%;
+    }
+    .card .card-body .meetup_visit button a {
+        color: #E56135;
+        text-decoration: none;
+    }
+    .card .card-body .job_apply button a {
+        color: #02B875;
+        text-decoration: none;
+    }
+    .articles {
+        margin-bottom: 10px;
+    }
+    .mobsignin {
+        bottom: 5%;
+        right: 5%;
+        height: 60px;
+        width: 60px;
+        display: block;
+        position: fixed;
+        background: linear-gradient(180deg, #FF5C5C 0%, #F0568A 100%);
+        padding: 10px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobsignin img {
+        width: 30px;
+        height: 30px;
+    }
+    #create-account-phone {
+        display: none;
+    }
+    #signin-phone {
+        display: none;
+    }
+    .modal .modal-all {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+    .modal-content {
+        height: 70%;
+        padding: 15px;
+    }
+    .modalheading {
+        float: left;
+    }
+    .close {
+        text-align: right;
+    }
+    .modal-content .others form input {
+        width: 100%
+    }
+    .modal input {
+        background: #F7F8FA;
+        border: 1px solid #D9D9DB;
+        width: 100%;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 16px;
+        color: #8A8A8A;
+        outline: 0;
+    }
+    .bluebutton {
+        background: #2F6CE5;
+        width: 100%;
+        margin: 20px 0 20px 0;
+        border-radius: 20px;
+        color: white;
+        border: 0;
+        outline: 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        box-shadow: 0;
+        padding: 10px;
+    }
+    .whitebutton {
+        background: transparent;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        padding: 10px;
+        outline: 0;
+        box-shadow: 0;
+        border: 0.6px solid #D9D9DB;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .whitebutton img {
+        margin-right: 10px;
+    }
+    .blue {
+        color: #339AF0;
+        cursor: pointer;
+    }
+    .caution {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+    .sign-or-create,
+    .forgotpass {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .forgotpass {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container,
+    .container-sm {
+        max-width: 100%;
     }
 }
